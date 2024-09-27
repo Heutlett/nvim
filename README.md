@@ -8,12 +8,13 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt install neovim
 ```
-2. Install ripgrip
+2. Install dependencies
 ```shell
 sudo apt-get install ripgrep
+sudo apt install python3-venv
 ```
 3. Copy this directory to ~/.config/
-4. Install the lsps
+6. Install the lsps
 
 # Commands
 
