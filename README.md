@@ -2,8 +2,16 @@
 
 # Installation
 
-1. Download the last version of nvim from the oficial website 
+1. Download the last version of nvim from the oficial website
+```shell
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update
+sudo apt install neovim
+```
 2. Install ripgrip
+```shell
+sudo apt-get install ripgrep
+```
 3. Copy this directory to ~/.config/
 4. Install the lsps
 
