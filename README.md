@@ -14,7 +14,14 @@ sudo apt-get install ripgrep
 sudo apt install python3-venv
 ```
 3. Copy this directory to ~/.config/
-6. Install the lsps
+4. Install nerd font:
+```shell
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+```
 
 # Commands
 
