@@ -4,7 +4,7 @@
 
 1. Download the last version of nvim from the oficial website
 ```shell
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt install neovim
 ```
