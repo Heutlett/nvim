@@ -10,15 +10,17 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "lua_ls",
-          "clangd",
-          "bashls",
-          "cmake",
-          "jsonls",
           "autotools_ls",
-          "marksman",
-          "swift_mesonls",
+          "bashls",
+          "clangd",
+          "cmake",
           "jedi_language_server",
+          "jsonls",
+          "lua_ls",
+          "marksman",
+          "mesonlsp",
+          "pyright",
+          "ruff"
         },
       })
     end,
@@ -30,31 +32,12 @@ return {
 
       local lspconfig = require("lspconfig")
 
-      lspconfig.lua_ls.setup({
+      lspconfig.autotools_ls.setup({
         capabilities = capabilities,
       })
       lspconfig.bashls.setup({
         capabilities = capabilities,
       })
-      lspconfig.cmake.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.jsonls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.autotools_ls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.marksman.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.swift_mesonls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.jedi_language_server.setup({
-        capabilities = capabilities,
-      })
-
       lspconfig.clangd.setup({
         capabilities = capabilities,
                   settings = {
@@ -66,6 +49,30 @@ return {
               },
             },
           }
+      })
+      lspconfig.cmake.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.jedi_language_server.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.jsonls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.lua_ls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.marksman.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.mesonlsp.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.pyright.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.ruff.setup({
+        capabilities = capabilities,
       })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
