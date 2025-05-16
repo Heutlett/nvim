@@ -26,7 +26,12 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 ```shell
 fc-cache -fv
 ```
-7. 
+7. To enable bidirectional copy install this:
+```shell
+sudo apt install xsel
+sudo apt install xclip
+```
+Then, to copy just select the text and press `y` and paste with ctrl+v.
 
 # Commands
 
