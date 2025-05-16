@@ -22,6 +22,11 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && rm JetBrainsMono.zip \
 && fc-cache -fv
 ```
+5. Update the font in your terminal, probably you must update the fonts cache *CLOSE ALL THE TERMINALS* and then go to preferences and select the font `JetBrainsMono Nerd Font Regular`:
+```shell
+fc-cache -fv
+```
+7. 
 
 # Commands
 
@@ -61,7 +66,7 @@ Ver ayuda = ?
 
 **Keyboard Shortcuts**
 
-* **g?** — Show help
+* **g?** — Show help (just type ?)
 * **<CR>** — Toggle package information
 * **<CR>** — Toggle installation log
 * **<C-f>** — Apply language filter
