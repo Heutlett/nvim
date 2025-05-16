@@ -57,4 +57,21 @@ Activar CTRL + n
 
 Ver ayuda = ?
 
+# Mason:
+
+**Keyboard Shortcuts**
+
+* **g?** — Show help
+* **<CR>** — Toggle package information
+* **<CR>** — Toggle installation log
+* **<C-f>** — Apply language filter
+* **i** — Install package
+* **x** — Uninstall package
+* **U** — Update selected package
+* **u** — Update all outdated packages
+* **c** — Check for new version (selected package)
+* **C** — Check for new versions (all packages)
+* **<C-c>** — Cancel package installation
+* **q** — Close window
+* **<Esc>** — Close window
 
