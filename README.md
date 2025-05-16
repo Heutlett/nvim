@@ -12,6 +12,8 @@ sudo apt install neovim
 ```shell
 sudo apt-get install ripgrep
 sudo apt install python3-venv
+sudo apt update
+sudo apt install npm nodejs
 ```
 3. Copy this directory to ~/.config/
 4. Install nerd font:
